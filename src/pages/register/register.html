@@ -1,0 +1,45 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Register</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Name</ion-label>
+      <ion-input type="email" [(ngModel)]="displayName"></ion-input>
+      <!-- ngmodel = input ผูกไว้กับ email -->
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Age</ion-label>
+      <ion-input type="email" [(ngModel)]="age"></ion-input>
+      <!-- ngmodel = input ผูกไว้กับ email -->
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Tel</ion-label>
+      <ion-input type="email" [(ngModel)]="tel"></ion-input>
+      <!-- ngmodel = input ผูกไว้กับ email -->
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input type="email" [(ngModel)]="email"></ion-input>
+      <!-- ngmodel = input ผูกไว้กับ email -->
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <button ion-button full (click)="register()">Register</button>
+</ion-content>
